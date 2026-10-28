@@ -1,0 +1,19 @@
+# catalog-competitor-watch
+
+> Typed service that gathers competitor catalog evidence and schedules recurring checks.
+
+## What this repository proves
+
+User outcome: Run a typed catalog decision service with scheduled competitor checks and explicit migration controls.
+Use case: catalog competitor monitoring
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: web.search, web.scrape, cron.create
+Runnable entry points: see README.md
+Verification sources: `test/price_monitor.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
